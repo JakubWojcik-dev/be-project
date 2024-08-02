@@ -11,7 +11,7 @@ To run project: 'docker-compose up -d'
 
 To check container logs: 'docker-compose logs -f'
 
-To stop cointainers: 'docker-compose down'
+To stop containers: 'docker-compose down'
 ```
 
 ## Run unit Tests Project
