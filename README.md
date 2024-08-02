@@ -1,8 +1,9 @@
 ### Nest websocket project
 ```
 WebSocket Handler for Sensor Data written with Nest.js framework and MongoDB for data storage. It uses CRUD WebSocket handler to manage input from temeprature and himidity sensors.
-
-I used Socket.io for webSocket server to receive sensor data in real-time. Unit tests are written using Jest to check the main functionalities of the application such as CRUD operations, Service and Gateway connections. Project is dockerized with Docker-Compose file configuration to run and manage both application and MongoDB container.
+I used Socket.io for webSocket server to receive sensor data in real-time.
+Unit tests are written using Jest to check the main functionalities of the application such as CRUD operations, Service and Gateway connections.
+Project is dockerized with Docker-Compose file configuration to run and manage both application and MongoDB container.
 ```
 ## Run project with docker
 ```
@@ -27,7 +28,7 @@ Node version 20.
 Build project with Docker
 .env file is required and should be placed into root folder.
 ```
-## .ENV.EXAMPLE file schema
+## .env.example file schema
 ```
 DB_URL=mongodb://mongodb:27017/sensor_data
 DB_PORT=27017:27017
