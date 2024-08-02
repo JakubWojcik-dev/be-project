@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: ${APP_NAME}
+    build: .
+    ports:
+      - "${APP_PORT}"
+    environment:
+      - MONGO_URI=${DB_URL}
+    depends_on:
+      - ${DB_Name}
+
+  mongodb:
+    container_name: ${DB_NAME}
+    image: mongo:latest
+    ports:
+      - "${DB_PORT}"
+    volumes:
+      - mongo-data:/${DB_VOLUME}
+volumes:
+  mongo-data:
